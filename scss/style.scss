@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #bac5db;
+	color: #fff;
+	// min-height: 100%;
+}
+
+.box {
+	background-color: #353a45;
+	width: 666px;
+	height: 383px;
+	margin: 104px auto;
+	border-radius: 20px;
+	position: relative;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+	padding: 0 60px 0 60px;
+	&__icon {
+		position: absolute;
+		top: -12%;
+		left: 286px;
+		border-radius: 50%;
+		transition: all .3s ease;
+		&:hover {
+			box-shadow: 0 0 10px 0 rgba(255,255,255,.7);
+		}
+	}
+	&__close {
+		font-size: 2.5rem;
+		position: absolute;
+		left: 95%;
+		top: 1%;
+		transition: all .3s ease;
+		& a {
+			color: #4c5873;
+			&:hover {color: #939aab;}
+		}
+	}
+	&__title {
+		font-size: 4.8rem;
+		color: #538fff;
+		text-align: center;
+		padding-top: 85px;
+		margin: 0 0 20px 0;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 2.2rem;
+		font-weight: 400;
+		margin: 0 0 36px 0;
+	}
+	&__form {
+		font-size: 2rem;
+		padding: 14px;
+		border-radius: 10px;
+		width: 370px;
+		color: #538fff;
+		outline: none;
+		border: none;
+	}
+	&__btn {
+		outline: none;
+		font-size: 2rem;
+		padding: 14px;
+		border-radius: 10px;
+		width: 160px;
+		border: none;
+		text-transform: uppercase;
+		background-color: #538fff;
+		letter-spacing: 1px;
+		margin-left: 14px;
+		transition: all .4s ease-in-out;
+		&:hover, &:active, &:focus {
+			// font-weight: bold;
+			letter-spacing: 3px;
+		}
+	}
+	&__info {
+		font-style: italic;
+		text-align: center;
+		color: #70757f;
+		font-size: 2rem;
+		margin-top: 40px;
+	}
+}
